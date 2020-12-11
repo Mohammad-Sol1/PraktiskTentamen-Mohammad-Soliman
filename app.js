@@ -31,10 +31,9 @@ fetch(url).then(response => {
 
     /* här loppar jag med de landerna i den araay för att lägga till inehållet till html */
     for (let i = 0; i < landerna.length; i++) {
-
         img[i].src = landerna[i].urlFlagga;
         landNamn[i].innerHTML = landerna[i].landetNamn;
-        timeLand[i].innerHTML = ` Den nuvarande tiden är :<br> ${landerna[i].CurrentTime()}`;
+        timeLand[i].innerHTML = ` Den nuvarande tiden är :<br> <br> ${landerna[i].CurrentTime()}`;
     }
 
 }).catch(/* för att hanter erorr 404 */
